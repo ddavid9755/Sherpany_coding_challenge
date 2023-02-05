@@ -28,10 +28,12 @@ public class BaseConfig {
         else if (browserType.equalsIgnoreCase("Firefox"))
         {
             driver = new FirefoxDriver(BrowserCapabilities.getFirefoxOptions());
+            driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
         }
         else if (browserType.equalsIgnoreCase("Edge"))
         {
             driver = new EdgeDriver(BrowserCapabilities.getEdgeOptions());
+            driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
         }
         driver.get(configFileReader.getApplicationUrl());
         loginPage = new LoginPage(driver);

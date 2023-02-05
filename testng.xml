@@ -10,4 +10,20 @@
         </classes>
     </test>
 
+    <test name = "Test On Firefox">
+        <parameter name="browserType" value="Firefox"/>
+        <classes>
+            <class name = "api.LoginApiTests"/>
+            <class name = "login.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name = "Test On Edge">
+        <parameter name="browserType" value="Edge"/>
+        <classes>
+            <class name = "api.LoginApiTests"/>
+            <class name = "login.LoginTests"/>
+        </classes>
+    </test>
+
 </suite>

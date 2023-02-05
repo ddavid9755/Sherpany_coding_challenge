@@ -21,23 +21,13 @@ public class BrowserCapabilities {
 
     public static FirefoxOptions getFirefoxOptions(){
         FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--window-size=1920,1080");
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        options.addArguments("--enable-javascript");
-        options.addArguments("--disable-notifications");
         return options;
     }
 
     public static EdgeOptions getEdgeOptions(){
         EdgeOptions options = new EdgeOptions();
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--window-size=1920,1080");
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        options.addArguments("--enable-javascript");
-        options.addArguments("--disable-notifications");
         return options;
     }
 }
