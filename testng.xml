@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Chrome execution">
+
+    <test name = "Test On Chrome">
+        <parameter name="browserType" value="Chrome"/>
+        <classes>
+            <class name = "api.LoginApiTests"/>
+            <class name = "login.LoginTests"/>
+        </classes>
+    </test>
+
+</suite>
